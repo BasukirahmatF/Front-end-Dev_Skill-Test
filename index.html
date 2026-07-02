@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basukirahmat F | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Influenzailla — bespoke design and marketing services. Responsive landing page built for the frontend skill test."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-XXXXXXX');
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <header class="site-header" data-header>
+      <div class="container header-bar">
+        <a class="brand" href="#top" data-track="logo" aria-label="Influenzailla home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="images/logo-mark.png" alt="" width="34" height="33" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Influenzailla</span>
+            <span class="brand-tagline">bespoke design and marketing services</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu">
+          MENU
+        </button>
+
+        <nav class="nav-grid" aria-label="Primary">
+          <a href="#" data-track="nav-about">About</a>
+          <a href="#" data-track="nav-services">Services</a>
+          <a href="#" data-track="nav-cases">Cases</a>
+          <a href="#" data-track="nav-team">Team</a>
+          <a href="#" data-track="nav-boost">Boost program</a>
+          <a href="#" data-track="nav-products">Products</a>
+          <a href="#" data-track="nav-book">Book</a>
+          <a href="#" data-track="nav-blog">Blog</a>
+          <a class="nav-lang" href="#" data-track="nav-lang" aria-label="Language">
+            <img src="images/icon-globe.png" alt="" width="17" height="16" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+      <div class="container header-bar">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="images/logo-mark.png" alt="" width="34" height="33" />
+          </span>
+          <span class="brand-name">Influenzailla</span>
+        </a>
+        <button class="menu-toggle" type="button" data-menu-close>Close</button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile primary">
+        <a href="#" data-track="mnav-about">About</a>
+        <a href="#" data-track="mnav-services">Services</a>
+        <a href="#" data-track="mnav-cases">Cases</a>
+        <a href="#" data-track="mnav-team">Team</a>
+        <a href="#" data-track="mnav-boost">Boost program</a>
+        <a href="#" data-track="mnav-products">Products</a>
+        <a href="#" data-track="mnav-book">Book</a>
+        <a href="#" data-track="mnav-blog">Blog</a>
+        <a href="#" class="mobile-nav-lang" data-track="mnav-lang" aria-label="Language">
+          <img src="images/icon-globe.png" alt="" width="17" height="16" />
+        </a>
+      </nav>
+    </div>
+
+    <main id="top">
+      <section class="hero bg-photo bg-photo--hero">
+        <div class="container hero-inner">
+          <div class="hero-toprow">
+            <span class="hero-year">2023</span>
+            <span class="hero-greeting">hi there,<br />let&rsquo;s get started!</span>
+          </div>
+
+          <div class="hero-headline">
+            <h1>Influence <span class="hl">your</span><br />audience</h1>
+            <p class="hero-sub">boost your brand with our marketing expertise</p>
+          </div>
+
+          <div class="hero-note">
+            <img class="spark" src="images/icon-spark.png" alt="" aria-hidden="true" />
+            <p>
+              We believe in the power of digital media to transform businesses and
+              connect them with their audiences in meaningful ways.
+            </p>
+          </div>
+        </div>
+
+        <div class="tag-strip">
+          <div class="container tag-strip-inner">
+            <span>digital branding</span>
+            <span>influence marketing</span>
+            <span>content creation</span>
+            <span>design/development</span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="anchor-nav" aria-label="Section shortcuts">
+        <div class="container anchor-nav-inner">
+          <a href="#about" data-track="anchor-about-us">
+            About us
+            <svg class="squiggle" viewBox="0 0 90 10" aria-hidden="true"><path d="M2 6c6-8 12 8 18 0s12-8 18 0 12 8 18 0 12-8 18 0" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          </a>
+          <a href="#expertise" data-track="anchor-expertise">
+            Expertise
+            <svg class="squiggle" viewBox="0 0 90 10" aria-hidden="true"><path d="M2 6c6-8 12 8 18 0s12-8 18 0 12 8 18 0 12-8 18 0" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          </a>
+          <a href="#experience" data-track="anchor-get-started">
+            Get started
+            <svg class="squiggle" viewBox="0 0 90 10" aria-hidden="true"><path d="M2 6c6-8 12 8 18 0s12-8 18 0 12 8 18 0 12-8 18 0" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          </a>
+          <a href="#projects" data-track="anchor-what-we-do">
+            What we do
+            <svg class="squiggle" viewBox="0 0 90 10" aria-hidden="true"><path d="M2 6c6-8 12 8 18 0s12-8 18 0 12 8 18 0 12-8 18 0" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          </a>
+        </div>
+      </nav>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="about-top">
+            <p class="eyebrow-script">London 2006</p>
+            <p class="about-intro">
+              Our creative design bureau is based in the heart of London and specializes
+              in digital branding, website design, and influence marketing.
+            </p>
+          </div>
+
+          <h2 class="gradient-text">We turn your digital<br /><span class="hl">dreams</span> into reality</h2>
+
+          <div class="about-bottom">
+            <p class="spark-para">
+              <img class="spark" src="images/icon-spark.png" alt="" aria-hidden="true" />
+              From designing eye-catching logos and brand identities, to building
+              custom websites that engage and convert visitors, to crafting
+              effective influencer marketing campaigns, we are dedicated to
+              helping our clients succeed in the digital space.
+            </p>
+            <div class="since-badge">
+              <img class="since-orb" src="images/orb-badge.png" alt="" aria-hidden="true" />
+              <span>since<br />2006</span>
+            </div>
+          </div>
+
+          <img class="spark-cluster" src="images/icon-spark-cluster.png" alt="" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section class="process">
+        <div class="process-grid">
+          <article class="process-cell" style="background-image: url('images/bg-process-1.png')">
+            <span class="process-num">01</span>
+            <p>We create unique brand identities that resonate with your target audience and help you stand out in a crowded marketplace</p>
+          </article>
+          <article class="process-cell" style="background-image: url('images/bg-process-2.png')">
+            <span class="process-num">02</span>
+            <p>We build custom websites that are visually stunning, easy to navigate, and optimized for search engines</p>
+          </article>
+          <article class="process-cell" style="background-image: url('images/bg-process-3.png')">
+            <span class="process-num">03</span>
+            <p>We develop influencer campaigns that help you reach a wider audience, build brand awareness, and drive conversions</p>
+          </article>
+          <article class="process-cell" style="background-image: url('images/bg-process-4.png')">
+            <span class="process-num">04</span>
+            <p>We produce high-quality content that engages your audience, builds trust, and reinforces your brand message</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="expertise" class="section expertise">
+        <div class="container">
+          <h2 class="gradient-text">Help <span>our</span> clients<br /><span class="hl">achive</span> their business<br />objectives</h2>
+
+          <div class="expertise-copy">
+            <p>
+              Influenzailla is a leading design and marketing agency that offers
+              creative solutions to businesses of all sizes. Our team of experts
+              specializes in creating unique and effective designs that help our
+              clients stand out in a crowded market.
+            </p>
+            <p>
+              We take pride in our ability to understand the unique needs and
+              goals of each of our clients, and to develop customized solutions
+              that exceed their expectations. Our team of talented designers and
+              marketers work closely with our clients to create a cohesive
+              brand identity, effective marketing strategies, and user-friendly
+              websites and applications.
+            </p>
+          </div>
+
+          <div class="offer-table">
+            <div class="offer-head">
+              <span class="offer-active">Branding</span>
+              <span>Design</span>
+              <span>Marketing</span>
+            </div>
+            <div class="offer-body">
+              <div class="offer-primary">
+                <img class="since-orb since-orb--sm" src="images/orb-small.png" alt="" aria-hidden="true" />
+                <p>Our team of experts specializes in creating unique and effective designs</p>
+              </div>
+              <div class="offer-secondary">
+                <p>We created marketing materials that were consistent with the new brand identity, such as business cards, brochures, and social media graphics.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expertise-footnote-row">
+            <img class="spark" src="images/icon-spark.png" alt="" aria-hidden="true" />
+            <p class="expertise-footnote">
+              We specialize in creating unique and innovative designs that not only
+              capture the essence of your business but also help you achieve your
+              goals. We believe that great design is about creating a seamless
+              user experience that engages and delights your audience, and we
+              work hard to ensure that every design we create meets this high
+              standard.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience bg-photo bg-photo--cta">
+        <div class="container experience-top">
+          <span class="hero-greeting hero-greeting--sm">hi there,<br />let&rsquo;s get started!</span>
+          <span class="hero-greeting hero-greeting--sm">hi there,<br />let&rsquo;s get started!</span>
+          <span class="hero-greeting hero-greeting--sm">hi there,<br />let&rsquo;s get started!</span>
+        </div>
+        <div class="container">
+          <h2 class="gradient-text">Expertise <span class="hl">and</span><br />experience</h2>
+          <div class="experience-copy">
+            <p>
+              We believe that building long-lasting relationships with our
+              clients is key to achieving success. We are passionate about
+              what we do, and we are committed to delivering exceptional
+              results for every client we work with.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-detail">
+        <div class="container">
+          <img class="spark-cluster" src="images/icon-spark-cluster.png" alt="" aria-hidden="true" />
+          <p class="spark-para">
+            <img class="spark" src="images/icon-spark.png" alt="" aria-hidden="true" />
+            Our team of talented designers and marketers works closely with
+            each of our clients, taking the time to understand their unique
+            needs and goals, and developing customized solutions that exceed
+            their expectations.
+          </p>
+          <p>
+            So if you&rsquo;re a start-up looking to create a strong brand identity,
+            or an established business looking to revamp your marketing
+            strategy, we have the expertise and experience to help you
+            succeed. Contact us today to learn more about our services and
+            how we can help your business grow.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="gradient-text">Projects for<br /><span class="hl">our</span> clients</h2>
+
+          <div class="carousel" data-carousel>
+            <div class="carousel-track" data-carousel-track>
+
+              <article class="project-card" style="background-image: url('images/bg-project-1.png')">
+                <span class="project-tag">branding</span>
+                <h3>Food store identity</h3>
+                <p>We worked with a local health food store to create a new brand identity that was both modern and eco-friendly.</p>
+              </article>
+
+              <article class="project-card" style="background-image: url('images/bg-project-2.png')">
+                <span class="project-tag">web design</span>
+                <h3>Technology startup site</h3>
+                <p>We partnered with a technology startup to create a new website that would showcase their innovative product and attract investors.</p>
+              </article>
+
+              <article class="project-card" style="background-image: url('images/bg-project-1.png')">
+                <span class="project-tag">influence marketing</span>
+                <h3>Wellness creator campaign</h3>
+                <p>We ran an influencer-led launch campaign that grew a wellness brand&rsquo;s audience and doubled its monthly sign-ups.</p>
+              </article>
+
+              <article class="project-card" style="background-image: url('images/bg-project-2.png')">
+                <span class="project-tag">content creation</span>
+                <h3>Studio content library</h3>
+                <p>We produced a season of social-first video and photo content that kept a design studio&rsquo;s feed consistent and on-brand.</p>
+              </article>
+
+              <article class="project-card" style="background-image: url('images/bg-project-1.png')">
+                <span class="project-tag">branding</span>
+                <h3>Coffee roastery rebrand</h3>
+                <p>We reimagined packaging and in-store identity for a specialty roastery expanding into three new cities.</p>
+              </article>
+
+              <article class="project-card" style="background-image: url('images/bg-project-2.png')">
+                <span class="project-tag">web design</span>
+                <h3>Fintech product site</h3>
+                <p>We designed a conversion-focused marketing site that helped a fintech client clarify a complex product line.</p>
+              </article>
+
+            </div>
+
+            <div class="carousel-controls">
+              <button type="button" class="carousel-arrow" data-carousel-prev aria-label="Previous projects" data-track="carousel-prev">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.6"/></svg>
+              </button>
+              <div class="carousel-dots" data-carousel-dots></div>
+              <button type="button" class="carousel-arrow" data-carousel-next aria-label="Next projects" data-track="carousel-next">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container header-bar">
+        <a class="brand" href="#top" data-track="footer-logo">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="images/logo-mark.png" alt="" width="34" height="33" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Influenzailla</span>
+            <span class="brand-tagline">bespoke design and marketing services</span>
+          </span>
+        </a>
+
+        <nav class="nav-grid" aria-label="Footer">
+          <a href="#" data-track="footer-about">About</a>
+          <a href="#" data-track="footer-services">Services</a>
+          <a href="#" data-track="footer-cases">Cases</a>
+          <a href="#" data-track="footer-team">Team</a>
+          <a href="#" data-track="footer-boost">Boost program</a>
+          <a href="#" data-track="footer-products">Products</a>
+          <a href="#" data-track="footer-book">Book</a>
+          <a href="#" data-track="footer-blog">Blog</a>
+          <a class="nav-lang" href="#" data-track="footer-lang" aria-label="Language">
+            <img src="images/icon-globe.png" alt="" width="17" height="16" />
+          </a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <button type="button" class="footer-link" data-menu-open data-track="footer-menu">Menu</button>
+        <a href="#" class="footer-link" data-track="footer-privacy">Privacy policy</a>
+        <span class="footer-copy">© 2026 Basukirahmat F. Crafted for the frontend skill test.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
